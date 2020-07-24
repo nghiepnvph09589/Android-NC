@@ -47,7 +47,7 @@ public class CallLogActivity extends AppCompatActivity {
             String number = cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER));
             int date = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.DATE))*1000;
             String n = cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATE));
-            String d = simpleDateFormat.format(date);
+//            String d = simpleDateFormat.format(date);
             cursor.moveToNext();
             list.add(number+"_"+n);
         }
